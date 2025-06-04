@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Technology';
+    src: url(./fonts/technology/Technology.ttf);
+}
+
 * {
 margin: 0;
 padding: 0;
@@ -6,7 +11,7 @@ box-sizing: border-box;
 
 body {
     height: 100vh;
-    background-color: rgb(13, 78, 13);
+    background-color: rgb(96, 152, 189);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -23,28 +28,49 @@ body {
 }
 
 #display {
-    -moz-appearance: textfield;
+    cursor: default;
     text-align: right;
-    font-size: 24px;
-    padding: 10px;
+    font-family: 'Technology';
+    font-size: 28px;
+    padding: 5px;
     width: 500px;
+    background-color: rgb(214, 175, 160);
+    font-weight: bold;
+}
+
+#display:focus {
+    outline: 0;
 }
 
 .calculator {
     display: flex;
     flex-direction: column;
     align-items: center;
-    outline: solid red 1px;
 }
 
 
 button {
+    cursor: grab;
     font-size: 24px;
     padding: 10px;
-    width: 125px;
+    width: 120px;
 }
 
+.number {
+    background-color: rgb(133, 204, 26, 0.7);
+}
 
+.operator {
+    background-color: rgb(168, 77, 168, 0.7);
+}
+
+.clear {
+    background-color: rgb(168, 155, 155, 0.7);
+}
+
+.equal {
+    background-color: rgb(202, 143, 76, 0.7);
+}
 
 
 .footer {
