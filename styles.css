@@ -1,6 +1,11 @@
 @font-face {
-    font-family: 'Technology';
-    src: url(./fonts/technology/Technology.ttf);
+    font-family: 'typo-digit';
+    src: url(./fonts/typo-digit-demo/Typo\ Digit\ Demo.otf);
+}
+
+@font-face {
+    font-family: 'leostut';
+    src: url(./fonts/leostut/Leostut.otf);
 }
 
 * {
@@ -20,6 +25,10 @@ body {
 
 .header {
     text-align: center;
+    font-family: 'leostut';
+    font-size: 50px;
+    color: rgb(110, 45, 21);
+    margin-top: 16px;
 }
 
 #display::-webkit-outer-spin-button,
@@ -30,11 +39,11 @@ body {
 #display {
     cursor: default;
     text-align: right;
-    font-family: 'Technology';
-    font-size: 28px;
-    padding: 5px;
+    font-family: 'typo-digit';
+    font-size: 36px;
+    height: 50px;
     width: 500px;
-    background-color: rgb(214, 175, 160);
+    background-color: rgb(226, 213, 208);
     font-weight: bold;
 }
 
@@ -75,4 +84,9 @@ button {
 
 .footer {
     text-align: center;
+    font-family: 'typo-digit';
+    font-size: 28px;
+    background-color: rgb(77, 63, 63);
+    color: rgb(207, 207, 22);
+    padding: 10px;
 }
