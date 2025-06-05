@@ -43,6 +43,14 @@ numberBtns.forEach(button => {
 const operationBtns = document.querySelectorAll('.operator');
 operationBtns.forEach(button => {
     button.addEventListener('click', function() {
+        if (isSolved == true) {
+            numOne = Number(display.value);
+            display.value = this.textContent;
+            operation = display.value;
+            isSolved = false;
+            return;
+        }
+
         if ( numOne != null ) { return; }
         
         numOne = Number(display.value);
@@ -59,8 +67,8 @@ equalBtn.addEventListener('click', () => {
     numTwo = Number(display.value);
     display.value = calculate(numOne, numTwo, operation);
     operation = null;
-    numOne = null;
     numTwo = null;
+    numOne = null;
     isOnNumTwo = false;
     isSolved= true;
     return;
