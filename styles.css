@@ -26,7 +26,7 @@ body {
 .header {
     text-align: center;
     font-family: 'leostut';
-    font-size: 50px;
+    font-size: clamp(50px, 8vw, 100px);
     color: rgb(110, 45, 21);
     margin-top: 16px;
 }
@@ -45,6 +45,7 @@ body {
     width: 500px;
     background-color: rgb(226, 213, 208);
     font-weight: bold;
+    padding: 10px;
 }
 
 #display:focus {
